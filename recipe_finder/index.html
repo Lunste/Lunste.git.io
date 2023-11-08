@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Recipe Finder</h1>
+    <form action="app.js">
+        <input class="input" type="text" placeholder="Search for Recipes">
+        <button>Find!</button>
+    </form>
+    <h2>Recommended Recipes</h2>
+    <div class="recipe-container">
+        <div class="recipe-box"  id="toast">
+            <img src="https://edamam-product-images.s3.amazonaws.com/web-img/6de/6dee8b14439e299cd670f5c89fbb5de2.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBcaCXVzLWVhc3QtMSJHMEUCIHx0j34xxID%2FUnmlxrnJ4CuhAt6BtZrwvNvhZG%2BIsZf4AiEAzTAv%2ByuuA0Nr%2B3Jm6KuBfLAZVzPo8Ppv%2B%2FnLJ2%2BN4BEquQUIMBAAGgwxODcwMTcxNTA5ODYiDKm4ysozfAkK1%2B50aCqWBVLnmTzKO5HOxzH88MoGc9CDlrTRbnBdonwQdRyhE%2B1PPyHOlSP1n3e9ueeKQYxmtlyazwOCEX%2FSDo3bYaFX6R467T9eka0dYMJgrd5XqJwtoEQ%2BTEotAjK%2FZu2osKjQdqBsgstMYJzH5mC04NFtyHTKUZTkC7i1%2BNSFuoqO42ipw1QZ%2F30pHub6u2c0Xs0TL6aWg7ZabCCm6cPh66ryNhJ6KcyMna%2FLuNr43ndlTNeUDEkTsYvLwQN59zL5QEv4LaVMirenfB%2Fnt5OF%2F3WbBNBOt4ATn4hgwDjDXaTQXOtboiwTUepCtRgaqyhRBd%2BLZC1T9w36HvSN9PGb8NgUPnLU3vW9%2FewzIuIwH8ihRvJpiLeM4uyl0q51btSnBtdaZYMK1%2BetybmNdxno03ZQmuqrtQS8foGIV%2BzV4bFzPX9zi0ixOJlZym3x4cpEkOXQuCdg1BaMJJFqwNp7VlRMqGN%2FybLrrI%2BhmXqNfxeYYDngIEjqwIU1HhxhIoxdSKNza8goYImG3shzQwXxIpkL9CyzvxnjHVyfNdoknbK5ngdHtOgXp6%2BtrC7B9OK6lvwiswAWdtO3aIFh2MdqIa4WKelBQMoHqBpyHeASU3%2FRlOALB08WbBQfwN4w1cVUQhleZQSK1qiMt1q%2B7jgEYzeR5sMKVOUsBorj1Lb4dHVzhJBP1VvVjiWL4IPk7a7CjTLrmg4Y4d4bsCj9GBY9BvVbCDnzCtjuj0QSzVoBxT798vVHy2CnqFG7RDZXoh5tMidJ37HbkeDfe4PYmJrgHWjV8pYtDGtObCV9%2FvB5CL22Rn0%2BkWJ7Bd6lKaAU%2FUJv3hV%2FM%2B03RSnet3xT9icO47wGzt2X2Jqr59KzppRn1h%2FofeIdm3qrYrZxMMSmpakGOrEBsgbkNs6g9JqS8VeSh%2Flpw2LLZCG%2FJmLpWoVu7FtFovCc7EdiytIbX3%2BgQ4vJ6g4UajhXCewzHZod%2B5qqxrHJOS1FkW0nLz1%2FsGNlgJiM61Zn90%2F%2FkOG5B7rs8IKdMSwtVIOQeAXhPOXPx%2BtiyjW2OdwBr9ZaMXoEi7V9Khzal0uEAcR%2FW29Vwcv8yvLpsaHTptWIw%2FbiwgfaSad%2F5yRlUr9yFPn9eXmceAgTAcjMeLAm&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231013T144349Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFPLN2FYXF%2F20231013%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=365f4e0f0650dfeea2484521c0a11ab8b8f9b77b24e4d9655ddf2def8377ce07" alt="spinach-salad-with-blood-oranges-and-pistachios">
+            <a href="https://www.edamam.com/results/recipe/?recipe=spinach-salad-with-blood-oranges-and-pistachios-recipe-0ec48df32629a4349a37af0fed9a6835/search=salad">Spinach Salad with Blood Oranges and Pistachios</a>
+            <span class="protein">Proteins: 0g</span>
+            <span class="cals">Calories: 0g</span>
+        </div>
+        <div class="recipe-box" id="salad">
+            <img src="https://edamam-product-images.s3.amazonaws.com/web-img/61b/61bb641f7775ef07be2392f023d8b815.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBcaCXVzLWVhc3QtMSJHMEUCIHx0j34xxID%2FUnmlxrnJ4CuhAt6BtZrwvNvhZG%2BIsZf4AiEAzTAv%2ByuuA0Nr%2B3Jm6KuBfLAZVzPo8Ppv%2B%2FnLJ2%2BN4BEquQUIMBAAGgwxODcwMTcxNTA5ODYiDKm4ysozfAkK1%2B50aCqWBVLnmTzKO5HOxzH88MoGc9CDlrTRbnBdonwQdRyhE%2B1PPyHOlSP1n3e9ueeKQYxmtlyazwOCEX%2FSDo3bYaFX6R467T9eka0dYMJgrd5XqJwtoEQ%2BTEotAjK%2FZu2osKjQdqBsgstMYJzH5mC04NFtyHTKUZTkC7i1%2BNSFuoqO42ipw1QZ%2F30pHub6u2c0Xs0TL6aWg7ZabCCm6cPh66ryNhJ6KcyMna%2FLuNr43ndlTNeUDEkTsYvLwQN59zL5QEv4LaVMirenfB%2Fnt5OF%2F3WbBNBOt4ATn4hgwDjDXaTQXOtboiwTUepCtRgaqyhRBd%2BLZC1T9w36HvSN9PGb8NgUPnLU3vW9%2FewzIuIwH8ihRvJpiLeM4uyl0q51btSnBtdaZYMK1%2BetybmNdxno03ZQmuqrtQS8foGIV%2BzV4bFzPX9zi0ixOJlZym3x4cpEkOXQuCdg1BaMJJFqwNp7VlRMqGN%2FybLrrI%2BhmXqNfxeYYDngIEjqwIU1HhxhIoxdSKNza8goYImG3shzQwXxIpkL9CyzvxnjHVyfNdoknbK5ngdHtOgXp6%2BtrC7B9OK6lvwiswAWdtO3aIFh2MdqIa4WKelBQMoHqBpyHeASU3%2FRlOALB08WbBQfwN4w1cVUQhleZQSK1qiMt1q%2B7jgEYzeR5sMKVOUsBorj1Lb4dHVzhJBP1VvVjiWL4IPk7a7CjTLrmg4Y4d4bsCj9GBY9BvVbCDnzCtjuj0QSzVoBxT798vVHy2CnqFG7RDZXoh5tMidJ37HbkeDfe4PYmJrgHWjV8pYtDGtObCV9%2FvB5CL22Rn0%2BkWJ7Bd6lKaAU%2FUJv3hV%2FM%2B03RSnet3xT9icO47wGzt2X2Jqr59KzppRn1h%2FofeIdm3qrYrZxMMSmpakGOrEBsgbkNs6g9JqS8VeSh%2Flpw2LLZCG%2FJmLpWoVu7FtFovCc7EdiytIbX3%2BgQ4vJ6g4UajhXCewzHZod%2B5qqxrHJOS1FkW0nLz1%2FsGNlgJiM61Zn90%2F%2FkOG5B7rs8IKdMSwtVIOQeAXhPOXPx%2BtiyjW2OdwBr9ZaMXoEi7V9Khzal0uEAcR%2FW29Vwcv8yvLpsaHTptWIw%2FbiwgfaSad%2F5yRlUr9yFPn9eXmceAgTAcjMeLAm&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231013T144637Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFPLN2FYXF%2F20231013%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=f7b1c06382fd9795cfea5f627c6dd672b9bafd34cfdef37a1bf0d65716deda99" alt="spiked-egg-nog-french-toast">
+            <a href="https://www.edamam.com/results/recipe/?recipe=spiked-egg-nog-french-toast-5d2bb74ac5e50acb8464ea2fc225c72c/search=egg">Spiked Egg Nog French Toast</a>
+            <span class="protein">Proteins: 0g</span>
+            <span class="cals">Calories: 0g</span>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
