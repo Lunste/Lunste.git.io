@@ -74,24 +74,4 @@ async function getInfo() {
     });
 }
 
-function setCookie(name, value) {
-    document.cookie = `${name}=${value}; expires=0; path=/`;
-}
-
-// Function to get a session cookie
-function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
-}
-
-// Check if a saved input value exists in the cookie
-const savedValue = getCookie('inputValue');
-
-// If a saved value exists, set it in the input field
-if (savedValue) {
-    input.value = savedValue;
-}
-
-// Add an event listener to the window's load event
 
